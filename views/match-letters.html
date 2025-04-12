@@ -1,13 +1,17 @@
 <h1>🎯 Pasangkan Huruf Besar dan Kecil</h1>
 <p>Drag huruf besar ke huruf kecil yang sesuai!</p>
+<div id="container">
+  <div class="game-container">
+    <div class="draggables" id="draggables"></div>
+    <div class="dropzones" id="dropzones"></div>
+  </div>
 
-<div class="game-container">
-  <div class="draggables" id="draggables"></div>
-  <div class="dropzones" id="dropzones"></div>
-</div>
-
-<div class="score-container">
-  <p>Skor: <span id="score">0</span></p>
-  <button id="moreBtn">🔄 lagi</button>
-  <button id="resetBtn">🔄 ulangi</button>
+  <div class="score-container">
+    <p>Skor: <span id="score">0</span></p>
+    <button id="moreBtn">🔄 lagi</button>
+    <button id="resetBtn">🔄 ulangi</button>
+  </div>
+  <div id="confetti-container"></div>
+  <div id="emoji-container"></div>
+  <audio id="yaySound" src="/assets/audio/yay.mp3" preload="auto"></audio>
 </div>
