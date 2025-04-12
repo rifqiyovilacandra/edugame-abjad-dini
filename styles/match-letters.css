@@ -1,0 +1,88 @@
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #fef6e4;
+  padding: 0;
+}
+
+h1 {
+  color: #001858;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.draggables,
+.dropzones {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  line-height: 60px;
+  font-weight: bold;
+  color: white;
+  background-color: #4daebb;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.card.dragging {
+  opacity: 0.5;
+  border: 2px dashed #c40202;
+}
+
+.dropzone {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  line-height: 60px;
+  background-color: #e0e0e0;
+  border: 2px dashed #c0c0c0;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.dropzone.highlight {
+  transform: scale(1.2);
+  background-color: #eef;
+  border: 2px dashed #3399ff;
+}
+
+.dropzone.correct {
+  background-color: #a7d58d;
+  color: white;
+}
+
+.dropzone.incorrect {
+  background-color: #ee3734;
+  color: white;
+}
+
+.score-container {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffb703;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fb8500;
+}
