@@ -1,10 +1,14 @@
-
-import { initMatchLetters } from "./components/match-letters.js"; 
+import { initMatchLetters } from "./components/match-letters.js";
+import { initArrangeLetters } from "./components/arrange-letters.js";
 
 const routes = {
   "match-letters": {
     view: "/views/match-letters.html",
     init: initMatchLetters,
+  },
+  "arrange-letters": {
+    view: "/views/arrange-letters.html",
+    init: initArrangeLetters,
   },
 };
 
